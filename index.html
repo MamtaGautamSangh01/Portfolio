@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo-3.png" class="logo">
+            <ul id="sidemenu"> 
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>HI, I'm <span>Mamta</span> <br>Gautam from Delhi</h1>
+            <h3>And I'm <span class="auto-type"></span></h3>
+            <br>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-telegram"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!------- about ------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/01.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>hello there! I'm Web Developer, a passinate and innovative Web Developer with a storng flair for crafting captivating online experience. with a keen eye for design and a love for coding, I thrive on bringing ideas to life through the power of technology.</p>
+                <p>As a we Developer, I specialize in designing and developing dynamic, User-centric website that not only visually stunning but also provide seamless functionality. From eye-catching landing pages to complex web applications, I take pride in every project I undertake. I am well-versed in various frontend and backend technology, including HTML, CSS, JAVASCRIPT, jQuery and Bootstrap.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web App interface</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>PHP Developer</span><br>Building Web App in PHP</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - 2023 May - June</span><br>UI/UX Design Executive at GharZone Technology Pvt Ltd. in Gurgaon</li>
+                        <li><span>2021-2022 Oct - Jan</span><br>Web Design Training at Ducat Institute in Ghaziabad</li>
+                        <li><span>2022 feb - May</span><br>PHP Training at Ducat Institute in Ghaziabad</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2012 - 2016</span><br>B.tech Kishan Institute of Education Technology in Meerut (AKTU University)</li>
+                        <li><span>2012</span><br>12th Pass in Adarsh Kanya Inter College in Modinagar (UP Board)</li>
+                        <li><span>2010</span><br>10th Pass in Vivek inter College in Modinagar (UP Board)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------  end about ------------>
+
+<!-- services -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>web Design</h2>
+                <p>As a passianate and skilled web designer, I take great pride in crearting visually stunning, user-friendly, and and functional websites. i aim to deliver memarable online experience that leave a losting impression</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>The primary goal of the UI/UX design is to provide a seamless and intuited experience for visitors to explore portfolio a clead unstanding and easily navigate though the showcaseded projects</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-php"></i>
+                <h2>PHP Website</h2>
+                <p>As a passianate and skilled web designer, the PHP programming language to create, test, and maintain websites and applications. They work on the back-end of applications to ensure that the front-end works correctly.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- end services -->
+<!-- Portfolio -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jfif" alt="">
+                <div class="layer">
+                    <h3>Social Media Website</h3>
+                    <p>A social media website is a platform that allows users to interact with each other by sharing, viewing, and creating content. Social media is a broad term that includes websites and applications that enable people to communicate, share content, and collaborate
+                    </p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work4.jfif" alt="">
+                <div class="layer">
+                    <h3>E-commerce Website</h3>
+                    <p>An e-commerce website is an online store where customers can buy and sell products and services over the internet. It's the virtual equivalent of a physical store, with product listings, categories, reviews, and a cash register.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jfif" alt="">
+                <div class="layer">
+                    <h3>All Type Website</h3>
+                    <p>Ecommerce website,
+                        Business website,
+                        Blog website,
+                        Portfolio website,
+                        Event website,
+                        Personal website,
+                        Membership website, and
+                        Nonprofit website
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+
+ </div>
+ <!-- end portfolio -->
+
+ <!-- Contact -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>mamta.sin095@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9368941213</p>
+                <br>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy;Mamta Gautam Made <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+    </div>
+  </div>
+
+  <!-- end Contact -->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-links")
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw3n_Npe7JnX5KMjoCNYWci2om3eAgXx94zmxQ3uFGonSw55iFl9OZibOtzv9_Xa9jfyg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully" 
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset() 
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+    
+  </script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed(".auto-type",{
+        strings : ["Programmer", "Designer", "Developer"],
+        typeSpeed : 150,
+        backSpeed : 150,
+        looped : true
+
+    })
+  </script>
+</body>
+</html>
